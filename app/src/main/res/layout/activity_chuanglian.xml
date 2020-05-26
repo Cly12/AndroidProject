@@ -1,0 +1,121 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <Button
+                    android:id="@+id/back_btn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/actionModeCloseDrawable" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="窗帘控制"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="10pt" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+                    <!-- 开关 -->
+                    <Button
+                        android:id="@+id/chuanglian_sound_control"
+                        android:layout_width="42dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@android:drawable/presence_audio_online" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="196dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="语音输入"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout14"
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:layout_width="174dp"
+                        android:layout_height="119dp"
+                        android:background="@mipmap/chuanglian"
+                        android:textSize="10pt" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/chuanglian_statues"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="窗帘关闭"
+                        android:textSize="10pt" />
+                </FrameLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

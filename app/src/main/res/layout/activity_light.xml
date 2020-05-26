@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="298dp"
+        android:background="#55A6CE" />
+
+    <Button
+        android:id="@+id/back_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/actionModeCloseDrawable" />
+
+    <ImageView
+        android:id="@+id/iv_item_image"
+        android:layout_width="349dp"
+        android:layout_height="227dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        app:srcCompat="@mipmap/light_off" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:gravity="center"
+        android:text="语音输入"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_start_recognizer"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="131dp"
+        android:layout_height="139dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="350dp"
+        android:background="@android:drawable/presence_audio_online"
+        android:gravity="center" />
+
+</RelativeLayout>

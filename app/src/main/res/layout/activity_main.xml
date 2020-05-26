@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:background="#5CA9E9"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="家居智能场景，语音助手为你服务"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="30dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_add"
+            android:layout_width="wrap_content"
+            android:layout_height="105dp"
+            android:layout_marginStart="32dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@android:drawable/ic_menu_add"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="添加设备"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="智能设备"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="209dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="459dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="245dp">
+
+        <ListView
+            android:id="@+id/list_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

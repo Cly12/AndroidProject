@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/actionModeCloseDrawable" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="电视遥控"
+            android:textColor="#000000"
+            android:textSize="10pt" />
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="481dp"
+            android:layout_gravity="top"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+                    <!-- 开关 -->
+                    <Button
+                        android:id="@+id/dianshi_sound_control"
+                        android:layout_width="42dp"
+                        android:layout_height="38dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@android:drawable/presence_audio_online" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="196dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="语音输入"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="频道"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="7pt" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="5dp">
+
+                        <Button
+                            android:id="@+id/dianshi_pindao_add_bt"
+                            android:layout_width="47dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="+"
+                            android:textSize="10pt" />
+
+                        <TextView
+                            android:id="@+id/tv_pindao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="频道1" />
+
+                        <Button
+                            android:id="@+id/dianshi_pindao_min_bt"
+                            android:layout_width="51dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="-"
+                            android:textSize="10pt" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="音量"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="7pt" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="2dp" >
+
+                        <Button
+                            android:id="@+id/dianshi_yinliang_add_bt"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="+"
+                            android:textSize="10pt" />
+
+                        <TextView
+                            android:id="@+id/tv_yinliang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="5"
+                            android:textSize="24sp" />
+
+                        <Button
+                            android:id="@+id/dianshi_yinliang_min_bt"
+                            android:layout_width="6dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="-"
+                            android:textSize="10pt" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout14"
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:layout_width="174dp"
+                        android:layout_height="119dp"
+                        android:background="@mipmap/dianshi"
+                        android:textSize="10pt" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/dianshi_statues"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="电视关闭"
+                        android:textSize="10pt" />
+                </FrameLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
